@@ -1,6 +1,7 @@
 <?php
 
 $celebrity = $_POST['celebrity'];
+//REname as this is about how deterministic output is given a particular prompt
 $craziness = $_POST['craziness']/10;
 
 $angry= $_POST['angry'];
