@@ -1,9 +1,7 @@
 <?php
 
 $celebrity = $_POST['celebrity'];
-//REname as this is about how deterministic output is given a particular prompt
-$craziness = $_POST['craziness']/10;
-
+$determinism = $_POST['determinism']/10;
 $angry= $_POST['angry'];
 $drunk= $_POST['drunk'];
 $defensive= $_POST['defensive'];
@@ -69,7 +67,7 @@ $data = array(
     'prompt' => $prompt,
     'max_tokens' => 100,
     'model'=> 'text-davinci-003',
-    'temperature' => $craziness,
+    'temperature' => $determinism,
     'top_p'=> 1,
     'frequency_penalty'=> 0,
     'presence_penalty'=> 0
